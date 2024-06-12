@@ -114,7 +114,7 @@ function checkBalance() {
 
 
 // Example usage with user input
-let userChoice = prompt("Enter 'd' to deposit, 'w' to withdraw, or 'b' to check balance: please enter lowercase letter");
+let userChoice = prompt("Enter 'd' to deposit, 'w' to withdraw, or 'b' to check balance: ").toLowerCase();
 if (userChoice === 'd') {
     let depositAmount = Number(prompt("Enter the amount to deposit:"));
     deposit(depositAmount);
